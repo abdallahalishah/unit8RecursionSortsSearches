@@ -11,36 +11,44 @@ public class PalindromeTester
      * Tests strings to see if they are palindromes.
      *
      */
-   public static void main (String[] args)
-   {
-      String str, another = "y";
-      int left, right;
-      Scanner s = new Scanner(System.in);
+    public static void main (String[] args)
+    {
+        String str, another = "y";
+        int left, right;
+        Scanner s = new Scanner(System.in);
 
-      while (another.equalsIgnoreCase("y")) // allows y or Y
-      {
-         System.out.println ("Enter a potential palindrome:");
-         str = s.nextLine();
+        while (another.equalsIgnoreCase("y")) // allows y or Y
+        {
+            System.out.println ("Enter a potential palindrome:");
+            str = s.nextLine();
 
-         left = 0;
-         right = str.length() - 1;
+            left = 0;
+            right = str.length() - 1;
 
-         while (str.charAt(left) == str.charAt(right) && left < right)
-         {
-            left++;
-            right--;
-         }
+            while (str.charAt(left) == str.charAt(right) && left < right)
+            {
+                left++;
+                right--;
+            }
 
-         System.out.println();
+            System.out.println();
 
-         if (left < right)
-            System.out.println ("That string is NOT a palindrome.");
-         else
-            System.out.println ("That string IS a palindrome.");
+            if (isPalindrome(str))
+                System.out.println ("That string IS a palindrome.");
+            else
+                System.out.println ("That string is NOT a palindrome.");
 
-         System.out.println();
-         System.out.print ("Test another palindrome (y/n)? ");
-         another = s.nextLine();
-      }
-   }
+            System.out.println();
+            System.out.print ("Test another palindrome (y/n)? ");
+            another = s.nextLine();
+        }
+    }
+
+    private static boolean isPalindrome(String str)
+    {
+       if (str.length() <= 1){return true;}
+       if (str.charAt(0) == str.charAt(str.length()-1) && isPalindrome(str.substring(1,str.length()-1))){return true;}
+       else{return false;}
+
+    }
 }

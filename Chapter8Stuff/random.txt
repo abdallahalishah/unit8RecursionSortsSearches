@@ -1,0 +1,13 @@
+A definite article indicates that its noun is a particular one (or ones) identifiable to the listener. It may be something that the speaker has already mentioned, or it may be something uniquely specified. The definite article in English, for both singular and plural nouns, is the.
+
+The children know the fastest way home.
+The sentence above refers to specific children and a specific way home; it contrasts with the much more general observation that:
+
+Children know the fastest way home.
+The latter sentence refers to children in general and their specific ways home. Likewise,
+
+Give me the book.
+refers to a specific book whose identity is known or obvious to the listener; as such it has a markedly different meaning from
+
+Give me a book.
+which does not specify what book is to be given.
